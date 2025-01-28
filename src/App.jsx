@@ -1,12 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeUi from "./Home/Home";
-import { BrowserRouter as Router } from "react-router";
-import UserRoutes from "./routes/userRoutes";
+import Sessions from "./sessions/Sessions";
+import Bookmarks from "./bookmarks/Bookmarks";
+import ProfileCard from "./profile/Profile";
 
 const App = () => {
   return (
     <Router>
-      <UserRoutes />
+      <Routes>
+        <Route path="/" element={<HomeUi />} />
+        <Route path="/session" element={<Sessions />} />
+        <Route path="/bookmarks" element={<Bookmarks />} />
+        <Route path="/profile" element={<ProfileCard />} />
+      </Routes>{" "}
     </Router>
   );
 };
