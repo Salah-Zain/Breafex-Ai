@@ -25,10 +25,9 @@ const Card = () => {
     },
   ];
 
- 
   return (
-    <div className="p-2 space-y-4 bg-slate-900">
-      <div className="bg-gray-800 rounded-lg p-4">
+    <div className="px-2 pb-[16px] space-y-4 bg-[rgb(16,19,26)]">
+      <div className="bg-[rgb(40,44,58)] rounded-lg p-4">
         <div className="flex justify-between items-start mb-3">
           <div className="">
             <div className="flex justify-between items-center">
@@ -40,11 +39,12 @@ const Card = () => {
               </div>
               <Button buttonText={"Transcripted"} buttonIcon={transcripted} />
             </div>
-            <h3 className="text-sm md:text-base font-medium mt-1 text-white font-inter leading-5 w-full border-b border-dotted py-2">
+            <h3 className="text-sm md:text-base font-medium mt-1 text-white font-inter leading-5 w-full border-[#868C98] border-b border-dotted py-2">
               Shaping the Financial Ecosystem of the Future
             </h3>
           </div>
         </div>
+
         <div className="flex justify-between items-center">
           <div className="flex -space-x-2 rounded-3xl bg-white py-1 pr-4">
             {cardImages1.map((data) => {
@@ -56,11 +56,10 @@ const Card = () => {
                 />
               );
             })}
-            
           </div>
           <div className="flex justify-end items-center">
             <img src={clock} alt="" className="p-1" />
-            <span className="text-xs text-gray-300">8:00 AM - 9:30 AM</span>
+            <span className="text-xs text-[#CDD0D5]">8:00 AM - 9:30 AM</span>
           </div>
         </div>
       </div>

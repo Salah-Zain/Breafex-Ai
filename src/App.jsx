@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomeUi from "./Home/Home";
-import Sessions from "./sessions/Sessions";
-import Bookmarks from "./bookmarks/Bookmarks";
-import ProfileCard from "./profile/Profile";
+import HomeUi from "./pages/Home/Home";
+import Sessions from "./pages/sessions/Sessions";
+import Bookmarks from "./pages/bookmarks/Bookmarks";
+import ProfileCard from "./pages/profile/Profile";
 
 const App = () => {
   return (
