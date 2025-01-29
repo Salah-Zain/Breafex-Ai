@@ -5,7 +5,7 @@ import {
   navSession,
   navBookmark,
   navProfile,
-  navLogo,
+  logo,
 } from "../../assets";
 
 const FooterNav = () => {
@@ -82,7 +82,7 @@ const FooterNav = () => {
           </span>
           <div className="flex items-center ml-2">
             <div className="w-[79.44px] h-[16.4px] sm:w-7 sm:h-7 rounded-md flex items-center justify-center">
-              <img src={navLogo} alt="" className="w-[full]" />
+              <img src={logo} alt="" className="w-[full]" />
             </div>
           </div>
         </div>

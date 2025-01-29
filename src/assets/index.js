@@ -15,7 +15,7 @@ import home from "./Icons/home.svg";
 import navSession from "./Icons/navSession.svg";
 import navBookmark from "./Icons/navBookmark.svg";
 import navProfile from "./Icons/navProfile.svg";
-import navLogo from "./Icons/navLogo.svg";
+import logo from "./Icons/logo.svg";
 
 
 
@@ -37,5 +37,5 @@ export {
   navSession,
   navBookmark,
   navProfile,
-  navLogo,
+  logo,
 };
