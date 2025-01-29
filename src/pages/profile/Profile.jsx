@@ -17,7 +17,7 @@ const ProfileCard = () => {
             </div>
 
             {/* Profile Image */}
-            <div className="absolute bottom-10 sm:-bottom-8 left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-36 sm:-bottom-8 left-1/2 transform -translate-x-1/2">
               <div className="relative">
                 <div className="w-24 h-24 rounded-full border-4 border-gray-900 overflow-hidden">
                   <img
