@@ -37,7 +37,7 @@ const HomeUi = () => {
         </div>
 
         <div>
-          <p className="px-4 pb-3 font-[500] text-[16px] text-base font-inter">
+          <p className="p-4 font-[500] text-[16px] text-base font-inter">
             Latest Updated
           </p>
         </div>

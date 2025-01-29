@@ -23,18 +23,16 @@ const Bookmarks = () => {
                     Sessions
                   </span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="flex items-center space-x-2">
-                    <div className="pr-0 rounded-lg">
-                      <img
-                        src={takeAway}
-                        className="w-[36.8px] h-[36.8px] sm:w-6 sm:h-6"
-                      />
-                    </div>
-                    <span className="text-[#868C98] text-base sm:text-lg md:text-xl font-inter text-[14px] font-medium pr-4">
-                      Take Away
-                    </span>
+                <div className="flex items-center flex-1">
+                  <div className="pl-4 rounded-lg">
+                    <img
+                      src={takeAway}
+                      className="w-[36.8px] h-[36.8px] sm:w-6 sm:h-6"
+                    />
                   </div>
+                  <span className="text-base sm:text-lg md:text-xl font-inter text-[14px] font-medium text-[#868C98]">
+                    Take away
+                  </span>
                 </div>
               </div>
 

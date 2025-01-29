@@ -29,8 +29,8 @@ const Card = () => {
     <div className="px-2 pb-[16px] space-y-4 bg-[rgb(16,19,26)]">
       <div className="bg-[rgb(40,44,58)] rounded-lg p-4">
         <div className="flex justify-between items-start mb-3">
-          <div className="">
-            <div className="flex justify-between items-center">
+          <div className="w-full">
+            <div className="flex justify-between items-center w-full">
               <div className="flex">
                 <img src={calender} alt="" />
                 <span className="text-xs text-gray-300 font-inter text-[12px] pl-1">

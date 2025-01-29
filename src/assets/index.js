@@ -17,8 +17,6 @@ import navBookmark from "./Icons/navBookmark.svg";
 import navProfile from "./Icons/navProfile.svg";
 import logo from "./Icons/logo.svg";
 
-
-
 export {
   cardImg1,
   cardImg2,
