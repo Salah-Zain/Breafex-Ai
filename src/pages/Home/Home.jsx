@@ -8,7 +8,7 @@ const HomeUi = () => {
     <>
       <div className=" bg-gray-900 text-white">
         {/* Header */}
-        <header className="pl-3 pt-3  flex items-center justify-between bg-grey-900">
+        <header className="pl-6 pb-4 pt-3  flex items-center justify-between bg-grey-900">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-full bg-gray-600 border-[1px] border-solid">
               <img src={transparent} alt="Profile" />
