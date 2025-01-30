@@ -5,7 +5,10 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter"]
-      }
+      },
+      lineHeight: {
+        '5.5': '1.375rem', // 22px
+      },
     },
   },
   plugins: [],

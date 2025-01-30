@@ -4,6 +4,7 @@ import HomeUi from "./pages/Home/Home";
 import Sessions from "./pages/sessions/Sessions";
 import Bookmarks from "./pages/bookmarks/Bookmarks";
 import ProfileCard from "./pages/profile/Profile";
+import Overview from "./pages/overview/Overview";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
         <Route path="/session" element={<Sessions />} />
         <Route path="/bookmarks" element={<Bookmarks />} />
         <Route path="/profile" element={<ProfileCard />} />
-      </Routes>{" "}
+        <Route path="/overview" element={<Overview />} />
+      </Routes>
     </Router>
   );
 };

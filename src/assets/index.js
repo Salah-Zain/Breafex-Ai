@@ -16,6 +16,16 @@ import navSession from "./Icons/navSession.svg";
 import navBookmark from "./Icons/navBookmark.svg";
 import navProfile from "./Icons/navProfile.svg";
 import logo from "./Icons/logo.svg";
+import rightButton from "./Icons/rightButton.svg";
+import overviewProfile from "./Icons/overviewProfile.svg";
+import overviewCal from "./Icons/overviewCal.svg";
+import overview from "./Icons/overview.svg";
+import takeAwayIcon from "./Icons/takeAwayIcon.svg";
+import social from "./Icons/social.svg";
+import resource from "./Icons/resource.svg";
+import overviewList from "./Icons/overviewList.svg";
+import share from "./Icons/share.svg";
+import pdf from "./Icons/pdf.svg";
 
 export {
   cardImg1,
@@ -36,4 +46,14 @@ export {
   navBookmark,
   navProfile,
   logo,
+  rightButton,
+  overviewProfile,
+  overviewCal,
+  overview,
+  takeAwayIcon,
+  social,
+  resource,
+  overviewList,
+  share,
+  pdf,
 };
