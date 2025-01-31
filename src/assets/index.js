@@ -26,6 +26,19 @@ import resource from "./Icons/resource.svg";
 import overviewList from "./Icons/overviewList.svg";
 import share from "./Icons/share.svg";
 import pdf from "./Icons/pdf.svg";
+import takeawaybluestar from "./Icons/takeawaybluestar.svg";
+import takeAwayblueheart from "./Icons/takeAwayblueheart.svg";
+import takeAwayblueshare from "./Icons/takeawaybluestar.svg";
+import takeAwaybluebookmarkfill from "./Icons/takeawaybluebookmark-fill.svg";
+import twitter from "./Icons/twitter.svg";
+import linkedin from "./Icons/linkedin.svg";
+import socialcontent from "./Icons/socialcontent.svg";
+import linkedinog from "./Icons/linkedinog.svg";
+import copy from "./Icons/copy.svg";
+import twitterblack from "./Icons/twitterblack.svg";
+import linkedinblue from "./Icons/linkedinblue.svg";
+import adobepdf from "./Icons/adobepdf.svg";
+import download from "./Icons/download.svg";
 
 export {
   cardImg1,
@@ -56,4 +69,17 @@ export {
   overviewList,
   share,
   pdf,
+  takeawaybluestar,
+  takeAwayblueheart,
+  takeAwayblueshare,
+  takeAwaybluebookmarkfill,
+  twitter,
+  linkedin,
+  socialcontent,
+  linkedinog,
+  copy,
+  twitterblack,
+  linkedinblue,
+  adobepdf,
+  download
 };
