@@ -26,7 +26,7 @@ import resource from "./Icons/resource.svg";
 import overviewList from "./Icons/overviewList.svg";
 import share from "./Icons/share.svg";
 import pdf from "./Icons/pdf.svg";
-import takeawaybluestar from "./Icons/takeawaybluestar.svg";
+// import takeawaybluestar from "./Icons/takeawaybluestar.svg";
 import takeAwayblueheart from "./Icons/takeAwayblueheart.svg";
 import takeAwayblueshare from "./Icons/takeawaybluestar.svg";
 import takeAwaybluebookmarkfill from "./Icons/takeawaybluebookmark-fill.svg";
@@ -81,5 +81,5 @@ export {
   twitterblack,
   linkedinblue,
   adobepdf,
-  download
+  download,
 };
