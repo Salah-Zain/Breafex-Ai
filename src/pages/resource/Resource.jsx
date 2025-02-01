@@ -19,50 +19,62 @@ const Resource = () => {
       downloadImg: download,
     },
     {
-      id: 1,
+      id: 2,
       img: adobepdf,
-      heading: "Presentation Slides",
+      heading: "Preparation Slides",
       subHead: "Pdf.2.4 MB",
       downloadImg: download,
     },
   ];
 
   return (
-    <div className="bg-gray-900 h-screen text-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-gray-900 min-h-screen text-white p-4 sm:p-6 lg:p-8">
       <Menu />
 
       {/* Content Section */}
       <div className="flex items-center gap-2 py-2">
-        <img src={socialcontent} alt="" />
-        <h2 className="font-inter font-medium text-[14px] sm:text-[16px] text-[#FFFFFF]">
+        <img
+          src={socialcontent}
+          alt="Social Content"
+          className="w-6 h-6 sm:w-8 sm:h-8"
+        />
+        <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#FFFFFF]">
           Resources
         </h2>
       </div>
 
-      {resource.map((res) => {
-        return (
-          <>
-            {/* Content Section */}
-            <div className="space-y-4 py-4" key={res.id}>
-              {/* Presentation Slides */}
-              <div className="bg-[#282C3A] p-4 rounded-lg flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <img src={res.img} alt="" className="w-[34px] h-[34px]" />
-                  <div className="">
-                    <h2 className="text-lg sm:text-xl lg:text-2xl font-inter leading-tight">
-                      {res.heading}
-                    </h2>
-                    <p>{res.subHead}</p>
-                  </div>
-                </div>
-                <div className="w-[34px] h-[34px] border border-[#5BF5FF] rounded-lg flex items-center justify-center">
-                  <img src={res.downloadImg} alt="" className="" />
-                </div>
+      {/* Resource List */}
+      <div className="space-y-4 py-4">
+        {resource.map((res) => (
+          <div
+            className="bg-[#282C3A] p-4 rounded-lg flex items-center justify-between"
+            key={res.id}
+          >
+            <div className="flex items-center gap-2">
+              <img
+                src={res.img}
+                alt="PDF Icon"
+                className="w-[34px] h-[34px] sm:w-[40px] sm:h-[40px]"
+              />
+              <div>
+                <h2 className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-inter leading-tight">
+                  {res.heading}
+                </h2>
+                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#CDD0D5]">
+                  {res.subHead}
+                </p>
               </div>
             </div>
-          </>
-        );
-      })}
+            <div className="w-[34px] h-[34px] sm:w-[40px] sm:h-[40px] border border-[#5BF5FF] rounded-lg flex items-center justify-center">
+              <img
+                src={res.downloadImg}
+                alt="Download"
+                className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

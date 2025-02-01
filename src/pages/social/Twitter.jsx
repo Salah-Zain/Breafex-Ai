@@ -11,6 +11,7 @@ import {
 } from "../../assets";
 import { Copy, Share } from "lucide-react";
 import MenuButton from "../../components/share-copy-download-button/MenuButton";
+import { Link } from "react-router";
 
 const Twitter = () => {
   return (
@@ -32,10 +33,12 @@ const Twitter = () => {
               <img src={twitterblack} alt="" />
               <button>Twitter</button>
             </div>
+            <Link to="/social/linkedin">
             <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-4 py-2 rounded-lg">
               <img src={linkedinblue} alt="" />
               <button>LinkedIn</button>
             </div>
+            </Link>
           </div>
         </div>
 

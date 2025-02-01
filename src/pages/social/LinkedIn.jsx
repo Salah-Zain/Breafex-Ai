@@ -9,6 +9,7 @@ import {
   twitter,
 } from "../../assets";
 import MenuButton from "../../components/share-copy-download-button/MenuButton";
+import { Link } from "react-router";
 
 const LinkedIn = () => {
   return (
@@ -25,22 +26,27 @@ const LinkedIn = () => {
             </h2>
           </div>
           <div className="flex items-center">
-            <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-4 py-2 rounded-lg">
-              <img src={twitter} alt="" />
-              <button>Twitter</button>
-            </div>
-            <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-4 py-1 rounded-lg">
-              <img src={linkedin} alt="" />
-              <button>LinkedIn</button>
-            </div>
+            {/* twitter link */}
+            <Link to="/social/twitter">
+              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-4 py-2 rounded-lg">
+                <img src={twitter} alt="" />
+                <button>Twitter</button>
+              </div>
+            </Link>
+            {/* linkedin link */}
+            <Link to="/social/linkedin">
+              <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-4 py-1 rounded-lg">
+                <img src={linkedin} alt="" />
+                <button>LinkedIn</button>
+              </div>
+            </Link>
           </div>
         </div>
 
         {/* Content Section */}
         <div className="bg-[#222534] space-y-6 rounded-lg">
           {/* Strategic AI Implementation */}
-          <div></div>
-          <div></div>
+          
           <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-4">
             <div className="py-4 flex items-center justify-between">
               <div className="flex gap-2">

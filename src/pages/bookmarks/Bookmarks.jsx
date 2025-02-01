@@ -2,10 +2,11 @@ import React from "react";
 import Card from "../../components/Card.jsx";
 import { bookmark, session, takeAway } from "../../assets/index.js";
 import FooterNav from "../../components/NavBar/FooterNav.jsx";
+import { Link } from "react-router-dom";
 
 const Bookmarks = () => {
   return (
-    <>
+    <div className="bg-gray-900 h-screen flex flex-col justify-between">
       <div>
         <div className="w-full bg-gray-900 text-gray-100">
           <nav className="max-w-screen-xl mx-auto p-4">
@@ -23,17 +24,20 @@ const Bookmarks = () => {
                     Sessions
                   </span>
                 </div>
-                <div className="flex items-center flex-1">
-                  <div className="pl-4 rounded-lg">
-                    <img
-                      src={takeAway}
-                      className="w-[36.8px] h-[36.8px] sm:w-6 sm:h-6"
-                    />
+                {/* take away */}
+                <Link to="/takeaway">
+                  <div className="flex items-center flex-1">
+                    <div className="pl-4 rounded-lg">
+                      <img
+                        src={takeAway}
+                        className="w-[36.8px] h-[36.8px] sm:w-6 sm:h-6"
+                      />
+                    </div>
+                    <span className="text-base sm:text-lg md:text-xl font-inter text-[14px] font-medium text-[#868C98]">
+                      Take away
+                    </span>
                   </div>
-                  <span className="text-base sm:text-lg md:text-xl font-inter text-[14px] font-medium text-[#868C98]">
-                    Take away
-                  </span>
-                </div>
+                </Link>
               </div>
 
               {/* Active Tab Indicator */}
@@ -55,14 +59,16 @@ const Bookmarks = () => {
             </div>
           </nav>
         </div>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Link to="/overview">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Link>
       </div>
 
       <FooterNav />
-    </>
+    </div>
   );
 };
 

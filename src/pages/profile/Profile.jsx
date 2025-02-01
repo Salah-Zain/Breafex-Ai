@@ -5,8 +5,8 @@ import FooterNav from "../../components/NavBar/FooterNav";
 
 const ProfileCard = () => {
   return (
-    <>
-      <div className="bg-gray-900 min-h-screen flex items-center justify-center p-4">
+    <div className=" h-screen bg-gray-900 flex flex-col justify-between">
+      <div className="bg-gray-900 h-auto  flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           {/* Banner Card */}
           <div className="relative bg-cyan-50 rounded-2xl mb-16 sm:mb-20">
@@ -84,9 +84,8 @@ const ProfileCard = () => {
           </div>
         </div>
       </div>
-
       <FooterNav />
-    </>
+    </div>
   );
 };
 

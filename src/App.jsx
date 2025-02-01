@@ -5,10 +5,11 @@ import Sessions from "./pages/sessions/Sessions";
 import Bookmarks from "./pages/bookmarks/Bookmarks";
 import ProfileCard from "./pages/profile/Profile";
 import Overview from "./pages/overview/Overview";
-import TakeAway from "./pages/takeAway/TakeAway";
+import OverviewTakeAway from "./pages/overview-takeAway/OverviewTakeAway";
 import LinkedIn from "./pages/social/LinkedIn";
 import Twitter from "./pages/social/Twitter";
 import Resource from "./pages/resource/Resource";
+import TakeAway from "./pages/bookmarks/TakeAway";
 
 const App = () => {
   return (
@@ -16,13 +17,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomeUi />} />
         <Route path="/session" element={<Sessions />} />
-        <Route path="/bookmarks" element={<Bookmarks />} />
+        <Route path="/bookmark" element={<Bookmarks />} />
+        <Route path="/takeaway" element={<TakeAway />} />
         <Route path="/profile" element={<ProfileCard />} />
         <Route path="/overview" element={<Overview />} />
-        <Route path="/takeaway" element={<TakeAway />} />
-        <Route path="/linkedin" element={<LinkedIn />} />
-        <Route path="/twitter" element={<Twitter />} />
-        <Route path="/resource" element={<Resource />} />
+        <Route path="/overview/takeaway" element={<OverviewTakeAway />} />
+        <Route path="/social/linkedin" element={<LinkedIn />} />
+        <Route path="/social/twitter" element={<Twitter />} />
+        <Route path="/overview/resource" element={<Resource />} />
       </Routes>
     </Router>
   );

@@ -1,12 +1,12 @@
 import React from "react";
-import { banner, transparent } from "../../assets/index.js";
+import { banner, transcripted, transparent } from "../../assets/index.js";
 import Card from "../../components/Card.jsx";
 import FooterNav from "../../components/NavBar/FooterNav.jsx";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const HomeUi = () => {
   return (
-    <>
+    <div className="bg-gray-900 h-screen flex flex-col justify-between">
       <div className=" bg-gray-900 text-white">
         {/* Header */}
         <header className=" pb-4 pt-3  flex items-center justify-between bg-grey-900 px-4">
@@ -38,25 +38,23 @@ const HomeUi = () => {
         </div>
 
         <div>
-          <p className="p-4 font-[500] text-[16px] text-base font-inter">
+          <p className="p-4 font-[500] text-[16px] font-inter text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
             Latest Updated
           </p>
         </div>
+        {/* Event List */}
+        <Link to="/overview">
+          <Card />
+          <Card />
+          <Card />
+        </Link>
       </div>
-
-      {/* Event List */}
-      <Link to="/overview">
-      <Card />
-      </Link>
-      <Card />
-      <Card />
-      <Card />
 
       {/*
 
       {/* Bottom Navigation */}
       <FooterNav />
-    </>
+    </div>
   );
 };
 
