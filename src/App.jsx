@@ -10,6 +10,8 @@ import LinkedIn from "./pages/social/LinkedIn";
 import Twitter from "./pages/social/Twitter";
 import Resource from "./pages/resource/Resource";
 import TakeAway from "./pages/bookmarks/TakeAway";
+import Summary from "./pages/overview/Summary";
+import Files from "./pages/resource/Files";
 
 const App = () => {
   return (
@@ -21,10 +23,12 @@ const App = () => {
         <Route path="/takeaway" element={<TakeAway />} />
         <Route path="/profile" element={<ProfileCard />} />
         <Route path="/overview" element={<Overview />} />
+        <Route path="/summary" element={<Summary />} />
         <Route path="/overview/takeaway" element={<OverviewTakeAway />} />
         <Route path="/social/linkedin" element={<LinkedIn />} />
         <Route path="/social/twitter" element={<Twitter />} />
         <Route path="/overview/resource" element={<Resource />} />
+        <Route path="/overview/files" element={<Files />} />
       </Routes>
     </Router>
   );

@@ -9,7 +9,7 @@ import {
   twitter,
 } from "../../assets";
 import MenuButton from "../../components/share-copy-download-button/MenuButton";
-import { Link } from "react-router";
+import { Link } from "react-router-dom"; // Corrected import
 
 const LinkedIn = () => {
   return (
@@ -17,48 +17,52 @@ const LinkedIn = () => {
       <Menu />
 
       {/* Content Section */}
-      <div className="">
+        {/* Header Section */}
         <div className="flex items-center justify-between gap-3 pb-6">
           <div className="flex items-center gap-2">
-            <img src={socialcontent} alt="" />
-            <h2 className="font-inter font-medium text-[14px] sm:text-[16px] text-[#FFFFFF]">
+            <img
+              src={socialcontent}
+              alt="Social Content"
+              className="w-6 h-6 sm:w-8 sm:h-8"
+            />
+            <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
               Social Content
             </h2>
           </div>
-          <div className="flex items-center">
-            {/* twitter link */}
+          <div className="flex items-center gap-2">
+            {/* Twitter Link */}
             <Link to="/social/twitter">
-              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-4 py-2 rounded-lg">
-                <img src={twitter} alt="" />
-                <button>Twitter</button>
+              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+                <img src={twitter} alt="Twitter" className="w-4 h-4 sm:w-6 sm:h-6" />
+                <button className="text-[12px] sm:text-[14px]">Twitter</button>
               </div>
             </Link>
-            {/* linkedin link */}
+            {/* LinkedIn Link */}
             <Link to="/social/linkedin">
-              <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-4 py-1 rounded-lg">
-                <img src={linkedin} alt="" />
-                <button>LinkedIn</button>
+              <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+                <img src={linkedin} alt="LinkedIn" className="w-4 h-4 sm:w-6 sm:h-6" />
+                <button className="text-[12px] sm:text-[14px]">LinkedIn</button>
               </div>
             </Link>
           </div>
         </div>
 
-        {/* Content Section */}
+        {/* Main Content Section */}
         <div className="bg-[#222534] space-y-6 rounded-lg">
-          {/* Strategic AI Implementation */}
-          
           <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-4">
+            {/* Post Header */}
             <div className="py-4 flex items-center justify-between">
               <div className="flex gap-2">
-                <img src={linkedinog} alt="" />
-                <p className="text-[16px]">#Post 1</p>
+                <img src={linkedinog} alt="LinkedIn" className="w-6 h-6 sm:w-8 sm:h-8" />
+                <p className="text-[14px] sm:text-[16px] md:text-[18px]">#Post 1</p>
               </div>
               <div>
-                <p>12/280</p>
+                <p className="text-[12px] sm:text-[14px]">12/280</p>
               </div>
             </div>
 
-            <div className="bg-[#222534]  px-4 rounded-lg py-2">
+            {/* Strategic AI Implementation */}
+            <div className="bg-[#222534] px-4 rounded-lg py-2">
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-4">
                 🎯Key Insights from 'Future of Al in Business' session at
                 #TechConf2025:
@@ -85,11 +89,12 @@ const LinkedIn = () => {
                 <li>Data quality as key success factor</li>
               </ul>
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-6">
-                What's your take on Al integration in your industry?Let's
+                What's your take on Al integration in your industry? Let's
                 discuss!
               </h2>
             </div>
 
+            {/* Share and Copy Buttons */}
             <div>
               <MenuButton
                 img1={share}
@@ -101,7 +106,6 @@ const LinkedIn = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

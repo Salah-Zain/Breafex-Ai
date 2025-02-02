@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   overview,
   overviewCal,
   overviewProfile,
-  resource,
+  resourceimg,
   rightButton,
   social,
   takeAwayIcon,
 } from "../../assets";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <>
       <div className="bg-gradient-to-r from-[#9CECFB] via-[#65C7F7] to-[#0052D4] rounded-lg px-4">
@@ -72,6 +74,7 @@ const Menu = () => {
             </p>
           </div>
         </Link>
+
         {/* overview take away */}
         <Link to="/overview/takeaway">
           <div className="flex items-center flex-col justify-center">
@@ -102,7 +105,7 @@ const Menu = () => {
         <Link to="/overview/resource">
           <div className="flex items-center justify-center flex-col">
             <img
-              src={resource}
+              src={resourceimg}
               alt=""
               className="w-[24px] h-[24px] sm:w-[36px] sm:h-[36px]"
             />

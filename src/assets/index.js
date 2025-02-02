@@ -22,7 +22,7 @@ import overviewCal from "./Icons/overviewCal.svg";
 import overview from "./Icons/overview.svg";
 import takeAwayIcon from "./Icons/takeAwayIcon.svg";
 import social from "./Icons/social.svg";
-import resource from "./Icons/resource.svg";
+import resourceimg from "./Icons/resource.svg";
 import overviewList from "./Icons/overviewList.svg";
 import share from "./Icons/share.svg";
 import pdf from "./Icons/pdf.svg";
@@ -39,6 +39,18 @@ import twitterblack from "./Icons/twitterblack.svg";
 import linkedinblue from "./Icons/linkedinblue.svg";
 import adobepdf from "./Icons/adobepdf.svg";
 import download from "./Icons/download.svg";
+import phone from "./Icons/phone.svg";
+import mail from "./Icons/mail.svg";
+import location from "./Icons/location.svg";
+import takewaypin from "./Icons/takewaypin.svg";
+import takewaycard from "./Icons/takewaycard.svg";
+import takeawaydetail from "./Icons/takeawaydetail.svg";
+import rescontimg from "./Icons/rescontimg.svg";
+import mentionedblack from "./Icons/mentionedblack.svg";
+import filesgreen from "./Icons/filesgreen.svg";
+import resgreen from "./Icons/resgreen.svg";
+import mentionedgreen from "./Icons/mentionedgreen.svg";
+import filesblack from "./Icons/filesblack.svg";
 
 export {
   cardImg1,
@@ -65,7 +77,7 @@ export {
   overview,
   takeAwayIcon,
   social,
-  resource,
+  resourceimg,
   overviewList,
   share,
   pdf,
@@ -82,4 +94,16 @@ export {
   linkedinblue,
   adobepdf,
   download,
+  phone,
+  mail,
+  location,
+  takewaycard,
+  takeawaydetail,
+  takewaypin,
+  rescontimg,
+  mentionedblack,
+  filesgreen,
+  resgreen,
+  mentionedgreen,
+  filesblack,
 };

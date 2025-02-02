@@ -4,7 +4,7 @@ import { home, navSession, navBookmark, navProfile, logo } from "../../assets";
 
 const FooterNav = () => {
   return (
-    <div className="sticky bg-[rgb(31,31,33,0.93)] border-gray-800">
+    <div className="fixed bottom-0 left-0 right-0 bg-[rgb(31,31,33)] border-gray-800 opacity-80">
       {/* Main Navigation */}
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-around items-center px-2 py-3 sm:py-4">

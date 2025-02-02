@@ -1,6 +1,5 @@
 import React from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
-import { banner, profile } from "../../assets";
+import { banner, location, mail, phone, profile } from "../../assets";
 import FooterNav from "../../components/NavBar/FooterNav";
 
 const ProfileCard = () => {
@@ -59,26 +58,30 @@ const ProfileCard = () => {
           {/* Contact Details */}
           <div className="mt-8 space-y-4 text-white">
             <div className="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-lg">
-              <MapPin className="w-5 h-5 text-cyan-500" />
+              <img src={location} className="w-5 h-5 text-cyan-500" />
               <div>
                 <p className="text-gray-400 text-sm">Address</p>
-                <p className="text-base sm:text-lg">Vellimadukunnu, Calicut</p>
+                <p className="text-[16px] text-[#FFFFFF]">
+                  Vellimadukunnu, Calicut
+                </p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-lg">
-              <Mail className="w-5 h-5 text-cyan-500" />
+              <img src={mail} className="w-5 h-5 text-cyan-500" />
               <div>
                 <p className="text-gray-400 text-sm">Mail id</p>
-                <p className="text-base sm:text-lg">ameenaahsan@gmail.com</p>
+                <p className="text-[16px] text-[#FFFFFF]">
+                  ameenaahsan@gmail.com
+                </p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-lg">
-              <Phone className="w-5 h-5 text-cyan-500" />
+              <img src={phone} className="w-5 h-5 text-cyan-500" />
               <div>
                 <p className="text-gray-400 text-sm">Phone Number</p>
-                <p className="text-base sm:text-lg">984179-90837</p>
+                <p className="text-[16px] text-[#FFFFFF]">984179-90837</p>
               </div>
             </div>
           </div>

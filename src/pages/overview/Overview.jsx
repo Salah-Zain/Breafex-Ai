@@ -1,21 +1,67 @@
-import { overviewList, pdf, share } from "../../assets";
+import { Link } from "react-router";
+import {
+  linkedin,
+  linkedinblue,
+  overviewList,
+  pdf,
+  share,
+  twitter,
+  twitterblack,
+} from "../../assets";
 import Menu from "../../components/menu/Menu";
 import MenuButton from "../../components/share-copy-download-button/MenuButton";
 
 const Overview = () => {
   return (
-    <div className="w-full h-auto bg-gray-900">
-      <div className="px-3 py-[16px] h-screen bg-gray-900">
+    <div className="bg-gray-900 text-white p-4 sm:p-6 lg:p-8">
+      <div className="  bg-gray-900">
         {/* Header Card */}
         <Menu />
 
         {/* Section 3: Overview */}
-        <div className="flex items-center gap-3 pb-6">
+        <div className="flex items-center justify-between gap-3 pb-6">
+          <div className="flex items-center gap-2">
+            <img
+              src={overviewList}
+              alt="overviewList"
+              className="w-6 h-6 sm:w-8 sm:h-8"
+            />
+            <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
+              Overview
+            </h2>
+          </div>
+          <div className="flex items-center gap-2">
+            {/* Twitter Link */}
+            <Link to="/overview">
+              <div className="flex items-center gap-2 border-0 bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+                <img
+                  src={twitterblack}
+                  alt="Twitter"
+                  className="w-4 h-4 sm:w-6 sm:h-6"
+                />
+                <button className="text-[12px] sm:text-[14px]">Overview</button>
+              </div>
+            </Link>
+            {/* LinkedIn Link */}
+            <Link to="/summary">
+              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+                <img
+                  src={linkedinblue}
+                  alt="LinkedIn"
+                  className="w-4 h-4 sm:w-6 sm:h-6"
+                />
+                <button className="text-[12px] sm:text-[14px]">Summary</button>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        {/* <div className="flex items-center gap-3 pb-6">
           <img src={overviewList} alt="" />
           <h2 className="font-inter font-medium text-[14px] sm:text-[16px] text-[#FFFFFF]">
             Overview
           </h2>
-        </div>
+        </div> */}
 
         {/* Section 4: Content */}
         <div className="bg-[rgb(40,44,58)] p-4 rounded-lg">
@@ -48,8 +94,12 @@ const Overview = () => {
               </ul>
             </div>
             {/* Section 5: Inner Div 2 button */}
-           <MenuButton img1={share} img1Text={"Share"} img2={pdf} img2Text={"Download"} />
-
+            <MenuButton
+              img1={share}
+              img1Text={"Share"}
+              img2={pdf}
+              img2Text={"Download"}
+            />
           </div>
         </div>
       </div>
