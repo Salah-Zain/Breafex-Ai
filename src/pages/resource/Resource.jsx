@@ -82,9 +82,9 @@ const ResourceList = () => {
         </div>
       </div>
 
-      <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-4 ">
+      <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py- ">
         {/* Header */}
-        <div className="flex items-center gap-2 text-cyan-400">
+        <div className="flex items-center gap-2 text-cyan-400 py-4">
           <img
             src={rescontimg}
             className="w-3 h-3 xs:w-5 xs:h-5 sm:w-6 sm:h-6"

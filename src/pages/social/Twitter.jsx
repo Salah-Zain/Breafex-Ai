@@ -95,7 +95,7 @@ const Twitter = () => {
       <div className="bg-[#222534] space-y-6 rounded-lg py-4">
         {/* Strategic AI Implementation */}
 
-        <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-4">
+        <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-">
           <div className="py-4 flex items-center justify-between">
             <div className="flex gap-2">
               <img src={linkedinog} alt="" />
