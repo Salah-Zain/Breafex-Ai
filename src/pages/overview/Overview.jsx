@@ -20,11 +20,11 @@ const Overview = () => {
 
         {/* Section 3: Overview */}
         <div className="flex items-center justify-between gap-3 pb-6">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <img
               src={overviewList}
               alt="overviewList"
-              className="w-6 h-6 sm:w-8 sm:h-8"
+              className="w-5 h-5 sm:w-8 sm:h-8"
             />
             <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
               Overview

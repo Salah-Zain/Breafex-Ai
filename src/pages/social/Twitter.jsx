@@ -7,6 +7,7 @@ import {
   linkedinog,
   share,
   socialcontent,
+  twitter,
   twitterblack,
 } from "../../assets";
 import { Copy, Share } from "lucide-react";
@@ -26,7 +27,7 @@ const Twitter = () => {
           <img
             src={socialcontent}
             alt="Social Content"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="w-5 h-5 sm:w-8 sm:h-8"
           />
           <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
             Social Content
@@ -62,11 +63,13 @@ const Twitter = () => {
       <div className="bg-[#222534] space-y-6 rounded-lg">
         {/* Strategic AI Implementation */}
 
-        <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg py-">
+        <div className="px-4 bg-[#282C3A] text-[#CDD0D5] font-inter text-[14px] rounded-lg">
           <div className="py-4 flex items-center justify-between">
             <div className="flex gap-2">
-              <img src={linkedinog} alt="" />
-              <p className="text-[16px]">#Post 1</p>
+              <img src={twitter} alt="" />
+              <p className="text-[14px] sm:text-[16px] md:text-[18px]">
+                #Post 1
+              </p>
             </div>
             <div>
               <p>12/280</p>

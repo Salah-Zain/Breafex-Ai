@@ -51,6 +51,11 @@ import filesgreen from "./Icons/filesgreen.svg";
 import resgreen from "./Icons/resgreen.svg";
 import mentionedgreen from "./Icons/mentionedgreen.svg";
 import filesblack from "./Icons/filesblack.svg";
+import instaRecapLogo from "./Icons/instaRecapLogo.svg";
+import CompanyIcon from "./Icons/formCompanyIcon.svg";
+import DesignationIcon from "./Icons/formDesignationIcon.svg";
+import GenderIcon from "./Icons/formGenderIcon.svg";
+import NameIcon from "./Icons/formNameIcon.svg";
 
 export {
   cardImg1,
@@ -106,4 +111,9 @@ export {
   resgreen,
   mentionedgreen,
   filesblack,
+  instaRecapLogo,
+  CompanyIcon,
+  GenderIcon,
+  DesignationIcon,
+  NameIcon,
 };

@@ -3,6 +3,12 @@ import { Link } from "react-router-dom"; // Corrected import
 import { home, navSession, navBookmark, navProfile, logo } from "../../assets";
 
 const FooterNav = () => {
+
+  const navItems = [
+    {
+      
+    }
+  ] 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[rgb(31,31,33)] border-gray-800 opacity-80">
       {/* Main Navigation */}

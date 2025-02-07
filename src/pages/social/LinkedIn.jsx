@@ -23,7 +23,7 @@ const LinkedIn = () => {
           <img
             src={socialcontent}
             alt="Social Content"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="w-5 h-5 sm:w-8 sm:h-8"
           />
           <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
             Social Content
@@ -61,17 +61,13 @@ const LinkedIn = () => {
           {/* Post Header */}
           <div className="py-4 flex items-center justify-between">
             <div className="flex gap-2">
-              <img
-                src={linkedinog}
-                alt="LinkedIn"
-                className="w-6 h-6 sm:w-8 sm:h-8"
-              />
+              <img src={linkedinog} alt="" />
               <p className="text-[14px] sm:text-[16px] md:text-[18px]">
                 #Post 1
               </p>
             </div>
             <div>
-              <p className="text-[12px] sm:text-[14px]">12/280</p>
+              <p>12/280</p>
             </div>
           </div>
 

@@ -30,7 +30,7 @@ const OverviewTakeAway = () => {
           <img
             src={takewaypin}
             alt="overviewList"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="w-5 h-5  sm:w-8 sm:h-8"
           />
           <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
             Take Away
