@@ -13,7 +13,7 @@ import Resource from "./pages/resource/Resource";
 import Summary from "./pages/overview/Summary";
 import Files from "./pages/resource/Files";
 import SigninForm from "./pages/form/SignInForm";
-import LoginForm from "./pages/form/loginForm";
+import LoginForm from "./pages/form/LoginForm";
 import FormOtp from "./pages/formOtp/FormOtp";
 
 const App = () => {
