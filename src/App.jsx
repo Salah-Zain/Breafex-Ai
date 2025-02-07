@@ -9,11 +9,11 @@ import OverviewTakeAway from "./pages/overview-takeAway/OverviewTakeAway";
 import LinkedIn from "./pages/social/LinkedIn";
 import Twitter from "./pages/social/Twitter";
 import Resource from "./pages/resource/Resource";
-import TakeAway from "./pages/bookmarks/TakeAway";
+// import TakeAway from "./pages/bookmarks/TakeAway";
 import Summary from "./pages/overview/Summary";
 import Files from "./pages/resource/Files";
 import SigninForm from "./pages/form/SignInForm";
-// import LoginForm from "./pages/form/loginForm";
+import LoginForm from "./pages/form/loginForm";
 import FormOtp from "./pages/formOtp/FormOtp";
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/overview/resource" element={<Resource />} />
         <Route path="/overview/files" element={<Files />} />
         <Route path="/signform" element={<SigninForm />} />
-        {/* <Route path="/loginform" element={<LoginForm />} /> */}
+        <Route path="/loginform" element={<LoginForm />} />
         <Route path="/formotp" element={<FormOtp />} />
       </Routes>
     </Router>
