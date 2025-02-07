@@ -3,6 +3,7 @@ import Menu from "../../components/menu/Menu";
 import {
   copy,
   linkedin,
+  linkedinblue,
   linkedinog,
   share,
   socialcontent,
@@ -13,7 +14,7 @@ import { Link } from "react-router-dom"; // Corrected import
 
 const LinkedIn = () => {
   return (
-    <div className="bg-gray-900 text-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-[#10131A] text-white p-4 sm:p-6 lg:p-8">
       <Menu />
 
       {/* Content Section */}
@@ -29,25 +30,25 @@ const LinkedIn = () => {
             Social Content
           </h2>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex justify-center items-center">
           {/* Twitter Link */}
           <Link to="/social/twitter">
-            <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+            <div className="flex items-center justify-between border-0 bg-[#222534]  text-[#5BF5FF]  px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
               <img
                 src={twitter}
                 alt="Twitter"
-                className="w-4 h-4 sm:w-6 sm:h-6"
+                className="w-[13.5px] h-[15px] mr-2"
               />
               <button className="text-[12px] sm:text-[14px]">Twitter</button>
             </div>
           </Link>
           {/* LinkedIn Link */}
           <Link to="/social/linkedin">
-            <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+            <div className="flex items-center border-0 bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
               <img
                 src={linkedin}
                 alt="LinkedIn"
-                className="w-4 h-4 sm:w-6 sm:h-6"
+                className="w-[13.5px] h-[15px] mr-2"
               />
               <button className="text-[12px] sm:text-[14px]">LinkedIn</button>
             </div>
@@ -61,7 +62,7 @@ const LinkedIn = () => {
           {/* Post Header */}
           <div className="py-4 flex items-center justify-between">
             <div className="flex gap-2">
-              <img src={linkedinog} alt="" />
+              <img src={linkedinblue} alt="" />
               <p className="text-[14px] sm:text-[16px] md:text-[18px]">
                 #Post 1
               </p>
@@ -105,12 +106,12 @@ const LinkedIn = () => {
           </div>
 
           {/* Share and Copy Buttons */}
-          <div>
+          <div className="pb-4">
             <MenuButton
               img1={share}
-              img1tText={"Share"}
+              img1Text={"Share"}
               img2={copy}
-              img2Text={"Copy"}
+              img2Text={"copy"}
             />
           </div>
         </div>

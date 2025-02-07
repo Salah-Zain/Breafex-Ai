@@ -4,11 +4,13 @@ import {
   linkedin,
   linkedinblue,
   overviewList,
+  takeAway,
   takeAwaybluebookmarkfill,
   takeAwayblueheart,
   takeAwayblueshare,
   takeawaybluestar,
   takeawaydetail,
+  takeAwayIcon,
   takewaycard,
   takewaypin,
   twitter,
@@ -18,43 +20,43 @@ import { Link } from "react-router";
 
 const OverviewTakeAway = () => {
   return (
-    <div className="bg-gray-900 text-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-[#10131A] text-white p-4 sm:p-6 lg:p-8">
       <Menu />
 
       {/* Header Section */}
 
       {/* Header Section */}
 
-      <div className="flex items-center justify-between gap-3 pb-6">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between pb-6">
+        <div className="flex items-center gap-1">
           <img
             src={takewaypin}
             alt="overviewList"
-            className="w-5 h-5  sm:w-8 sm:h-8"
+            className="w-5 h-5 sm:w-8 sm:h-8"
           />
           <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
             Take Away
           </h2>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex justify-center items-center w-38 bg-[#282C3A]">
           {/* Twitter Link */}
-          <Link to="/overview/takeaway">
-            <div className="flex items-center gap-2 border-0 bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+          <Link to="/takeaway">
+            <div className="flex items-center justify-between border-0  bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
               <img
                 src={takewaycard}
                 alt="Twitter"
-                className="w-4 h-4 sm:w-6 sm:h-6"
+                className="w-[13.5px] h-[15px] mr-2"
               />
               <button className="text-[12px] sm:text-[14px]">Card</button>
             </div>
           </Link>
           {/* LinkedIn Link */}
-          <Link to="/overview/takeaway">
-            <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+          <Link to="">
+            <div className="flex items-center border-0   text-[#5BF5FF]  bg-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
               <img
                 src={takeawaydetail}
                 alt="LinkedIn"
-                className="w-4 h-4 sm:w-6 sm:h-6"
+                className="w-[13.5px] h-[15px] mr-2"
               />
               <button className="text-[12px] sm:text-[14px]">Detail</button>
             </div>
@@ -96,7 +98,7 @@ const OverviewTakeAway = () => {
         </div>
       </div>
 
-      <div className="bg-[#282C3A] p-4 rounded-lg mt-6">
+      <div className="bg-[#282C3A] p-4 rounded-lg pb-6 mt-6">
         <h4 className="text-base sm:text-lg lg:text-xl font-semibold mb-2">
           🤙Cross-Border Payment Innovations Creating Key Challenges
         </h4>

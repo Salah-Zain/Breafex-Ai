@@ -40,7 +40,7 @@ const Files = () => {
   ];
 
   return (
-    <div className="bg-gray-900 min-h-screen text-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-[#10131A] min-h-screen text-white p-4 sm:p-6 lg:p-8">
       <Menu />
 
       {/* Content Section */}

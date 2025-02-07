@@ -56,6 +56,12 @@ import CompanyIcon from "./Icons/formCompanyIcon.svg";
 import DesignationIcon from "./Icons/formDesignationIcon.svg";
 import GenderIcon from "./Icons/formGenderIcon.svg";
 import NameIcon from "./Icons/formNameIcon.svg";
+import clockBlack from "./Icons/clockBlack.svg";
+import shareBlack from "./Icons/shareBlack.svg";
+import overviewBlack from "./Icons/overviewBlack.svg";
+import summaryBlue from "./Icons/summaryBlue.svg";
+import summaryBlack from "./Icons/summaryBlack.svg";
+import overviewBlue from "./Icons/overviewBlue.svg";
 
 export {
   cardImg1,
@@ -116,4 +122,10 @@ export {
   GenderIcon,
   DesignationIcon,
   NameIcon,
+  clockBlack,
+  shareBlack,
+  overviewBlack,
+  summaryBlue,
+  summaryBlack,
+  overviewBlue,
 };

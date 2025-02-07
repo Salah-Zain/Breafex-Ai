@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/" element={<HomeUi />} />
         <Route path="/session" element={<Sessions />} />
         <Route path="/bookmark" element={<Bookmarks />} />
-        <Route path="/takeaway" element={<TakeAway />} />
+        <Route path="/takeaway" element={<OverviewTakeAway />} />
         <Route path="/profile" element={<ProfileCard />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/summary" element={<Summary />} />

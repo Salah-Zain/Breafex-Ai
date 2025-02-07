@@ -1,48 +1,60 @@
 import React from "react";
 import Menu from "../../components/menu/Menu";
-import { linkedin, overviewList, pdf, share, twitter } from "../../assets";
+import {
+  copy,
+  linkedin,
+  overview,
+  overviewBlack,
+  overviewBlue,
+  overviewList,
+  pdf,
+  share,
+  summaryBlack,
+  summaryBlue,
+  twitter,
+} from "../../assets";
 import MenuButton from "../../components/share-copy-download-button/MenuButton";
 import { Link } from "react-router";
 import { Copy } from "lucide-react";
 
 const Summary = () => {
   return (
-    <div className="bg-gray-900 text-white p-4 sm:p-6 lg:p-8">
-      <div className="  bg-gray-900">
+    <div className=" bg-[#10131A] text-white p-4 sm:p-6 lg:p-8">
+      <div className=" ">
         {/* Header Card */}
         <Menu />
 
         {/* Section 3: Overview */}
-        <div className="flex items-center justify-between gap-3 pb-6">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between pb-6">
+          <div className="flex items-center gap-1">
             <img
               src={overviewList}
               alt="overviewList"
-              className="w-6 h-6 sm:w-8 sm:h-8"
+              className="w-5 h-5 sm:w-8 sm:h-8"
             />
             <h2 className="font-inter font-medium text-[14px] sm:text-[16px] md:text-[18px] text-[#FFFFFF]">
               Overview
             </h2>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex justify-center items-center">
             {/* Twitter Link */}
             <Link to="/overview">
-              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+              <div className="flex items-center justify-between border-0 text-[#5BF5FF] bg-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
                 <img
-                  src={twitter}
+                  src={overviewBlue}
                   alt="Twitter"
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-[13.5px] h-[15px] mr-2"
                 />
                 <button className="text-[12px] sm:text-[14px]">Overview</button>
               </div>
             </Link>
             {/* LinkedIn Link */}
             <Link to="/summary">
-              <div className="flex items-center gap-2 border bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+              <div className="flex items-center border-0   bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
                 <img
-                  src={linkedin}
+                  src={summaryBlack}
                   alt="LinkedIn"
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-[13.5px] h-[15px] mr-2"
                 />
                 <button className="text-[12px] sm:text-[14px]">Summary</button>
               </div>
@@ -104,8 +116,8 @@ const Summary = () => {
             <MenuButton
               img1={share}
               img1Text={"Share"}
-              img2={pdf}
-              img2Text={"Download"}
+              img2={copy}
+              img2Text={"Copy"}
             />
           </div>
         </div>

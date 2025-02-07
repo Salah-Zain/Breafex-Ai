@@ -39,7 +39,7 @@ const Card = () => {
               </div>
               <Button buttonText={"Transcripted"} buttonIcon={transcripted} />
             </div>
-            <h3 className="text-sm md:text-base font-medium mt-1 text-white font-inter leading-5 w-full border-[#868C98] border-b border-dotted py-2">
+            <h3 className="text-[16px] font-[500] mt-1 text-white font-inter leading-0 w-full border-[#868C98] border-b border-dotted py-2">
               Shaping the Financial Ecosystem of the Future
             </h3>
           </div>

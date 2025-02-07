@@ -42,7 +42,7 @@ const ResourceList = () => {
   // };
 
   return (
-    <div className="bg-gray-900 min-h-screen text-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-[#10131A] min-h-screen text-white p-4 sm:p-6 lg:p-8">
       <Menu />
 
       <div className="flex items-center justify-between gap-3 pb-6">
@@ -95,7 +95,7 @@ const ResourceList = () => {
         </div>
 
         {/* Resource Cards */}
-        <div className="">
+        <div className="py-2">
           {resources.map((resource) => (
             <div
               key={resource.id}

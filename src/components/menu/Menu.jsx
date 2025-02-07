@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import {
+  clockBlack,
   overview,
   overviewCal,
   overviewProfile,
   resourceimg,
   rightButton,
+  share,
+  shareBlack,
   social,
   takeAwayIcon,
 } from "../../assets";
@@ -23,7 +26,7 @@ const Menu = () => {
               <img src={rightButton} alt="" className="" />
             </button>
           </Link>
-          <h1 className="px-3 font-inter font-medium text-[14px] sm:text-[16px] leading-5.5">
+          <h1 className="px-3 font-inter font-medium text-[16px] sm:text-[16px] leading-6">
             Shaping the Financial Ecosystem of the Future
           </h1>
         </div>
@@ -34,27 +37,33 @@ const Menu = () => {
             <img src={overviewProfile} alt="" className="rounded-full" />
           </div>
           <div className="flex flex-col">
-            <h2 className="px-3 font-inter font-medium text-[#0A0D14] text-[12px] sm:text-[14px] leading-[16.94px]">
+            <h2 className="px-3 font-inter font-medium text-[#0A0D14] text-[16px] sm:text-[14px] leading-[16.94px]">
               Safari Sanders Dennyes
             </h2>
-            <p className="px-3 font-inter text-[10px] sm:text-[12px] text-[#FFFFFF]">
+            <p className="px-3 font-inter text-[12px] text-[#525866]">
               Ai Research Director, Tecnosys
             </p>
           </div>
         </div>
 
         {/* Div 3: Date and Time */}
-        <div className="flex items-center pb-3">
-          <div className="flex items-center border-r-2 border-black">
-            <img src={overviewCal} alt="" className="p-2" />
-            <p className="text-[10px] sm:text-[12px] font-inter pr-2">
-              Jan 17, 2025
-            </p>
+        <div className="flex justify-between items-center pb-3">
+          <div className="flex">
+            <div className="flex items-center border-r-2 border-black">
+              <img src={overviewCal} alt="" className="p-2" />
+              <p className="text-[12px] text-[#0A0D14] font-inter pr-2">
+                Jan 17, 2025
+              </p>
+            </div>
+            <div className="flex items-center">
+              <img src={clockBlack} alt="" className="p-2" />
+              <p className="text-[10px] sm:text-[12px] font-inter text-[#0A0D14]">
+                45 min
+              </p>
+            </div>
           </div>
-          <span className="border-1 border-r-black"></span>
-          <div className="flex items-center">
-            <img src={overviewCal} alt="" className="p-2" />
-            <p className="text-[10px] sm:text-[12px] font-inter">45 min</p>
+          <div>
+            <img src={shareBlack} alt="" />
           </div>
         </div>
       </div>

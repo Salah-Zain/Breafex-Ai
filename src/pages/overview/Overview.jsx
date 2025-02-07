@@ -1,10 +1,15 @@
 import { Link } from "react-router";
 import {
+  copy,
   linkedin,
   linkedinblue,
+  overviewBlack,
+  overviewCal,
   overviewList,
+  overviewProfile,
   pdf,
   share,
+  summaryBlue,
   twitter,
   twitterblack,
 } from "../../assets";
@@ -13,13 +18,13 @@ import MenuButton from "../../components/share-copy-download-button/MenuButton";
 
 const Overview = () => {
   return (
-    <div className="bg-gray-900 text-white p-4 sm:p-6 lg:p-8">
-      <div className="  bg-gray-900">
+    <div className="h-screen bg-[#10131A] text-white p-4 sm:p-6 lg:p-8">
+      <div className="">
         {/* Header Card */}
         <Menu />
 
         {/* Section 3: Overview */}
-        <div className="flex items-center justify-between gap-3 pb-6">
+        <div className="flex items-center justify-between pb-6">
           <div className="flex items-center gap-1">
             <img
               src={overviewList}
@@ -30,25 +35,25 @@ const Overview = () => {
               Overview
             </h2>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex justify-center items-center w-44 bg-[#282C3A]">
             {/* Twitter Link */}
             <Link to="/overview">
-              <div className="flex items-center gap-2 border-0 bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+              <div className="flex items-center justify-between border-0 bg-[#5BF5FF] text-[#222534] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
                 <img
-                  src={twitterblack}
+                  src={overviewBlack}
                   alt="Twitter"
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-[13.5px] h-[15px] mr-2"
                 />
                 <button className="text-[12px] sm:text-[14px]">Overview</button>
               </div>
             </Link>
             {/* LinkedIn Link */}
             <Link to="/summary">
-              <div className="flex items-center gap-2 border-0 bg-[#222534] text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+              <div className="flex items-center border-0  text-[#5BF5FF] px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
                 <img
-                  src={linkedinblue}
+                  src={summaryBlue}
                   alt="LinkedIn"
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-[13.5px] h-[15px] mr-2"
                 />
                 <button className="text-[12px] sm:text-[14px]">Summary</button>
               </div>
@@ -64,7 +69,7 @@ const Overview = () => {
         </div> */}
 
         {/* Section 4: Content */}
-        <div className="bg-[rgb(40,44,58)] p-4 rounded-lg">
+        <div className=" bg-[rgb(40,44,58)] p-4 rounded-lg">
           <div>
             <p className="font-inter text-[12px] sm:text-[14px] text-[#CDD0D5]">
               EventHex stands out by tackling two key challenges that
@@ -97,8 +102,8 @@ const Overview = () => {
             <MenuButton
               img1={share}
               img1Text={"Share"}
-              img2={pdf}
-              img2Text={"Download"}
+              img2={copy}
+              img2Text={"copy"}
             />
           </div>
         </div>
