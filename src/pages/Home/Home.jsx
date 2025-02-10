@@ -6,20 +6,20 @@ import { Link } from "react-router-dom";
 
 const HomeUi = () => {
   return (
-    <div className="bg-gray-900 h-screen flex flex-col justify-between">
-      <div className=" bg-gray-900 text-white">
+    <div className="bg-gray-900 min-h-screen flex flex-col justify-between">
+      <div className="bg-gray-900 text-white">
         {/* Header */}
-        <header className=" pb-4 pt-3  flex items-center justify-between bg-grey-900 px-4">
+        <header className="pb-4 pt-3 flex items-center justify-between px-4">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-full bg-gray-600 border-[1px] border-solid">
-              <img src={transparent} alt="Profile" />
+              <img src={transparent} alt="Profile" className="w-full h-full rounded-full" />
             </div>
 
-            <div className="">
-              <p className="text-[12px] font-inter font-extralight leading-4">
+            <div>
+              <p className="text-xs font-inter font-extralight leading-4">
                 Welcome Back
               </p>
-              <h1 className=" text-gray-300 font-inter font-semibold leading-[1.21]">
+              <h1 className="text-gray-300 font-inter font-semibold leading-[1.21] text-sm sm:text-base">
                 Ahmed Zidane ! 🤟🏻
               </h1>
             </div>
@@ -28,20 +28,22 @@ const HomeUi = () => {
 
         {/* Banner */}
         <div className="px-4">
-          <div className=" rounded-xl">
+          <div className="rounded-xl">
             <img
               src={banner}
               alt="KEDDA EXPO"
-              className="w-full md:h-40 lg:h-48 object-contain"
+              className="w-full h-auto object-contain md:h-40 lg:h-48"
             />
           </div>
         </div>
 
+        {/* Latest Updated Section */}
         <div>
-          <p className="p-4 font-[500] text-[16px] font-inter text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+          <p className="p-4 font-inter font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             Latest Updated
           </p>
         </div>
+
         {/* Event List */}
         <Link to="/overview">
           <Card />
@@ -49,8 +51,6 @@ const HomeUi = () => {
           <Card />
         </Link>
       </div>
-
-      {/*
 
       {/* Bottom Navigation */}
       <FooterNav />
